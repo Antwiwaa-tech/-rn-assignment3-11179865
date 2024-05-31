@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, View, Image, ScrollView } from 'react-native';
+import Categories from './Categories';
 
 
 const Picture = require('./assets/Frame 1.png');
@@ -16,7 +17,7 @@ export default function App() {
             <Image source={Search} />
           </View>
 
-          
+          <Categories />
         </View>
       </ScrollView>
     </View>
