@@ -1,11 +1,21 @@
 import React from 'react';
 import { StyleSheet, View, Image, ScrollView } from 'react-native';
+import OngoingTask from './OngoingTask';
 import Categories from './Categories';
-
 
 const Picture = require('./assets/Frame 1.png');
 const Search = require('./assets/Search.png');
 
+const DATA = [
+  {
+    title: 'Ongoing Task',
+    data: [
+      "Mobile App Development", "Web Development", "Push Ups", "Cyber Security", "Networking",
+      "Software Engineering", "Artificial Intelligence", "Robotics", "Mechanical Engineering", "System Administration",
+      "Database Management", "Data Science", "Data Analysis", "Python", "Project Management", "Agile"
+    ]
+  }
+];
 
 export default function App() {
   return (
@@ -18,6 +28,7 @@ export default function App() {
           </View>
 
           <Categories />
+          <OngoingTask />
         </View>
       </ScrollView>
     </View>
